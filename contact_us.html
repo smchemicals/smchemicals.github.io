@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>S M Chemicals</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+
+<body>
+
+    <nav class="teal" role="navigation">
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="index.html" class="brand-logo center"><i class="material-icons">store</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="hoverable active">Home</a></li>
+                    <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                    <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                    <li><a href="#.html" class="hoverable">Industries</a></li>
+                    <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+                    <li><a href="#" class="hoverable">FAQ</a></li>
+                </ul>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html" class="hoverable">Home</a></li>
+                <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+                <li><a href="#" class="hoverable">FAQ</a></li>
+            </ul>
+
+        </nav>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="col s12 m4 l8 center-align">
+                    <div class="icon-block">
+                        <h2 class="center light-grey-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">S M Chemicals</h5>
+                        <br>
+                        <div class="col s4 container center-align z-depth-5 ">
+                            <!-- Promo Content 2 goes here -->
+                            <div class="card">
+                                <div class="card-content">
+                                    <h4>Contact Information</h3>
+                                        <p><i class="material-icons">account_circle</i> Name : Partha Sarthi Chatiri</p>
+                                        <p><i class=" material-icons">contact_mail</i> Mail - ID : smchemicals@gmail.com</p>
+                                        <p><i class="material-icons">phone_iphone</i> Mobile : +91 - 9246181170</p>
+                                        <p><i class="material-icons">phone</i> Office : 040 - 27565994</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <iframe class="container " src="https://docs.google.com/forms/d/e/1FAIpQLSf-gZWyfvqROLYguZpkQ6tZt9CsTZ_nnY_vD8zPXAwuzmu-DQ/viewform?embedded=true" width="700" height="1307" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+                </div>
+            </div>
+</body>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large amber pulse" onclick="window.scrollTo(0,0)">
+        <i class="large material-icons">arrow_upward</i>
+    </a>
+</div>
+</main>
+
+<footer class="page-footer grey">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">S M Chemicals</h5>
+                <p class="grey-text text-lighten-4">Nallakunta, Hyderabad, Telangana</p>
+            </div>
+            <div class="col l3 s12">
+                <h6 class="white-text">Quick Links</h6>
+                <ul>
+                    <li><a class="white-text" href="index.html">Home</a></li>
+                    <li><a class="white-text" href="contact_us.html">Contact Us</a></li>
+                    <li><a class="white-text" href="product_list.html">Product List</a></li>
+                    <li><a class="white-text" href="about_us.html">About Us</a></li>
+                    <li><a class="white-text" href="#.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright grey darken-1">
+        <div class="container">
+            Developed By <a class="orange-text text-lighten-3" href="http://abhiraman.ml" target="_blank">Abhiraman Kuntimaddi</a>
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script>
+    $('.carousel').carousel({
+        padding: 200
+    });
+    setTimeout(autoplay, 2500);
+
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 2500);
+    }
+
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $(".dropdown-trigger").dropdown();
+        $('.fixed-action-btn').floatingActionButton();
+    })
+
+</script>
+
+</body>
+
+</html>

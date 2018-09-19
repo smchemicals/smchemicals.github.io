@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>S M Chemicals</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <nav class="teal" role="navigation">
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="index.html" class="brand-logo center"><i class="material-icons">store</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="hoverable active">Home</a></li>
+                    <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                    <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                    <li><a href="#.html" class="hoverable">Industries</a></li>
+                    <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+                    <li><a href="#" class="hoverable">FAQ</a></li>
+                </ul>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html" class="hoverable">Home</a></li>
+                <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+                <li><a href="#" class="hoverable">FAQ</a></li>
+            </ul>
+
+        </nav>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="section">
+                <!--   Icon Section   -->
+                <div class="col s12 m4 l8 center-align">
+                    <div class="icon-block">
+                        <h2 class="center light-grey-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">S M Chemicals</h5>
+                        <p class="light"> S M Chemicals is engaged in the manufacture of speciality water soluble Polymers for water purification and waste water purification for Sewerage water, effluent water and textile effluent colour removal polymers and dispersants for reverse osmosis water, boiler and cooling tower water treatment polymers. It is the largest textile effluent colour removal polymer and second largest in dispersants manufacturing in Telangana state. These polymers have wide application in water treatment like boiler cooling tower, water softening for textile, multiple effect evaporators, reverse osmosis plants and textile effluent colour removal,COD,BOD and TSS reduction in treated waters.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <div class="carousel carousel-slider">
+                    <a class="carousel-item" href="#one!"><img src="bg01.jpg" alt="First"></a>
+                    <a class="carousel-item" href="#two!"><img src="bg02.jpg" alt="Second"></a>
+                    <a class="carousel-item" href="#three!"><img src="bg01.jpg"></a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="section container">
+            <!--   Icon Section   -->
+            <div class="col s12 m4 l8 center-align">
+                <div class="icon-block">
+                    <p class="light">SM Chemicals
+                        Established in the year 1996 at Hyderabad, Telangana, we “ S M Chemicals” are a Sole Proprietorship (Individual) based firm, involved as the manufacturer, trader, retailer and wholesaler of a wide assortment ofwater treatment Chemicals, Benzalkonium Chloride, Cooling Tower Chemical and many more. These products are known for their unmatched quality at the logical price in the predetermined time period.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        </div>
+
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large amber pulse" onclick="window.scrollTo(0,0)">
+                <i class="large material-icons">arrow_upward</i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="page-footer grey">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">S M Chemicals</h5>
+                    <p class="grey-text text-lighten-4">Nallakunta, Hyderabad, Telangana</p>
+                </div>
+                <div class="col l3 s12">
+                    <h6 class="white-text">Quick Links</h6>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Home</a></li>
+                        <li><a class="white-text" href="contact_us.html">Contact Us</a></li>
+                        <li><a class="white-text" href="product_list.html">Product List</a></li>
+                        <li><a class="white-text" href="about_us.html">About Us</a></li>
+                        <li><a class="white-text" href="#.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-1">
+            <div class="container">
+                Developed By <a class="orange-text text-lighten-3" href="http://abhiraman.ml" target="_blank">Abhiraman Kuntimaddi</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $('.carousel').carousel({
+            padding: 200
+        });
+        setTimeout(autoplay, 2500);
+
+        function autoplay() {
+            $('.carousel').carousel('next');
+            setTimeout(autoplay, 2500);
+        }
+
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.fixed-action-btn').floatingActionButton();
+        })
+
+    </script>
+
+</body>
+
+</html>
