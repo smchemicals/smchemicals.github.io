@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>S M Chemicals</title>
+
+    <!-- CSS  -->
+    <title>MaterializeCSS Multi-Column Card Flow</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://smchemicals.github.io/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+</head>
+
+<body>
+    <nav class="teal" role="navigation">
+        <nav>
+            <div class="nav-wrapper light-blue darken-4">
+                <a href="#!" class="brand-logo center"><i class="material-icons">store</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" class="hoverable active">Home</a></li>
+                    <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                    <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                    <li><a href="industries.html" class="hoverable">Industries</a></li>
+                    <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+                </ul>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html" class="hoverable">Home</a></li>
+                <li><a href="about_us.html" class="hoverable">About Us</a></li>
+                <li><a href="product_list.html" class="hoverable">Product List</a></li>
+                <li><a href="industries.html" class="hoverable">Industries</a></li>
+                <li><a href="contact_us.html" class="hoverable">Contact Us</a></li>
+            </ul>
+
+        </nav>
+    </nav>
+    <main>
+        <div class="row container">
+            <br><br>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/images/bg01.jpg">
+                        <span class="card-title" style="width:100%"></span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title truncate">Zeolite</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="bg01.jpg">
+                        <span class="card-title" style="width:100%"></span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title truncate">EDTA2Na and Equivalents</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="bg01.jpg">
+                        <span class="card-title" style="width:100%"></span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title truncate">BKC 50% and BKC 80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="bg01.jpg">
+                        <span class="card-title" style="width:100"></span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title truncate">Oxygen granules</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="bg01.jpg">
+                        <span class="card-title" style="width:100"></span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Microbe based treatement for fish and prawn</span>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large amber pulse" onclick="window.scrollTo(0,0)">
+            <i class="large material-icons">arrow_upward</i>
+        </a>
+    </div>
+    <footer class="page-footer grey">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">S M Chemicals</h5>
+                    <p class="grey-text text-lighten-4">Nallakunta, Hyderabad, Telangana</p>
+                </div>
+                <div class="col l3 s12">
+                    <h6 class="white-text">Quick Links</h6>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Home</a></li>
+                        <li><a class="white-text" href="contact_us.html">Contact Us</a></li>
+                        <li><a class="white-text" href="product_list.html">Product List</a></li>
+                        <li><a class="white-text" href="about_us.html">About Us</a></li>
+                        <li><a class="white-text" href="#.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-1">
+            <div class="container">
+                Developed By <a class="orange-text text-lighten-3" href="http://abhiraman.ml" target="_blank">Abhiraman Kuntimaddi</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $(".dropdown-trigger").dropdown();
+        $('.fixed-action-btn').floatingActionButton();
+        $('.modal').modal();
+    })
+
+</script>
+
+</html>
