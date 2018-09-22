@@ -39,3 +39,10 @@ S M Chemicals is in the field of manufacturies and marketing exporter associatio
  - Sanitation
  
  Visit us at [S M Chemicals](https://smchemicals.co.in)
+ 
+ 
+ 
+ 
+Designed and Developed using [Materalizecss] (https://materializecss.com/)
+
+Designed and Developed by [Kuntimaddi Abhiraman](https://abhiraman.ml/)
