@@ -4,3 +4,18 @@ S M Chemicals is in the field of manufacturies and marketing exporter associatio
 
 > We are in constant search and research for new and advanced applications in the industrial and institutional markets.
 
+## Products List
+
+ - Water Treatment Chemicals
+ - Pulp And Paper
+ - ETP Plant and chemicals
+ - Aqua Culture
+ - Laundry Chemicals
+ - Power Plants
+ - Polymers
+ - Ceramic Industries
+ - Cooling Water Treatment
+ - R O Chemicals
+ - Textile Chemicals
+ - Construction
+ - Other Chemicals
