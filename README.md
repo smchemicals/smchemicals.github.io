@@ -20,5 +20,4 @@ S M Chemicals is in the field of manufacturies and marketing exporter associatio
  - Construction
  - Other Chemicals
  
-visit us at [smchemicals.co.in
-](smchemicals.co.in)
+visit us at[smchemicals.co.in](https://smchemicals.co.in/)
