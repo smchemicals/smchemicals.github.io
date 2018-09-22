@@ -124,7 +124,29 @@
     })
 
 </script>
-
+    <script>
+        $(document).ready(function() {
+            $(document).bind("contextmenu", function(e) {
+                alert('right click disabled by the developer.');
+                return false;
+            });
+            document.onkeydown = function(e) {
+                if (e.ctrlKey &&
+                    (e.keyCode === 67 ||
+                        e.keyCode === 86 ||
+                        e.keyCode === 85 ||
+                        e.keyCode === 117)) {
+                    alert('Action has been disabled by the developer. Be Creative.');
+                    return false;
+                } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                    alert('Action has been disabled by the developer. Be Creative.')
+                    return false;
+                } else {
+                    return true;
+                }
+            };
+        });
+    </script>
 </body>
 
 </html>

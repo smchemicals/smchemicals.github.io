@@ -12,15 +12,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://smchemicals.github.io/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900" rel="stylesheet">
 </head>
 
 <body>
-   <nav class="teal" role="navigation" id="top">
+    <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper light-blue darken-4">
-              
-                <a id="logo-container" href="index.html" class="brand-logo"><img src="SMC_Logo_Orig.png" height="50px" width="80px" vspace="25" hspace="20"/></a>
+
+                <a id="logo-container" href="index.html" class="brand-logo"><img src="SMC_Logo_Orig.png" height="50px" width="80px" vspace="25" hspace="20" /></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="hoverable active">Home</a></li>
@@ -143,6 +143,30 @@
         $('.fixed-action-btn').floatingActionButton();
         $('.modal').modal();
     })
+
+</script>
+<script>
+    $(document).ready(function() {
+        $(document).bind("contextmenu", function(e) {
+            alert('right click disabled by the developer.');
+            return false;
+        });
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('Action has been disabled by the developer. Be Creative.');
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                alert('Action has been disabled by the developer. Be Creative.')
+                return false;
+            } else {
+                return true;
+            }
+        };
+    });
 
 </script>
 
