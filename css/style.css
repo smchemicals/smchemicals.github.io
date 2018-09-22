@@ -9,6 +9,8 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background: #ffffff;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 main {
