@@ -43,6 +43,6 @@ S M Chemicals is in the field of manufacturies and marketing exporter associatio
  
  
  
-Designed and Developed using [Materalizecss] (https://materializecss.com/)
+Designed and Developed using [Materalizecss](https://materializecss.com/)
 
 Designed and Developed by [Kuntimaddi Abhiraman](https://abhiraman.ml/)
