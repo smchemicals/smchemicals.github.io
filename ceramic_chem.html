@@ -17,11 +17,10 @@
 
 <body>
     <nav class="teal" role="navigation" id="top">
-       <nav class="teal" role="navigation" id="top">
         <nav>
             <div class="nav-wrapper light-blue darken-4">
-              
-                <a id="logo-container" href="index.html" class="brand-logo"><img src="SMC_Logo_Orig.png" height="50px" width="80px" vspace="25" hspace="20"/></a>
+
+                <a id="logo-container" href="index.html" class="brand-logo"><img src="SMC_Logo_Orig.png" height="50px" width="80px" vspace="25" hspace="20" /></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="hoverable active">Home</a></li>
@@ -41,32 +40,32 @@
         </nav>
     </nav>
     <main>
+
         <div class="row container">
             <br><br>
             <div class="col m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/bg01.jpg">
-                        <span class="card-title" style="width:100%"></span>
+                        <img height="250px" src="/images/Binders.jpg">
+                        <span class="card-title"></span>
                     </div>
                     <div class="card-content">
-                        <span class="card-title truncate">Binders</span>
+                        <span class="card-title">Binders</span>
                     </div>
                 </div>
             </div>
             <div class="col m4">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/images/bg01.jpg">
-                        <span class="card-title" style="width:100%"></span>
+                        <img height="250px" src="/images/Dispersant.jpg">
+                        <span class="card-title"></span>
                     </div>
                     <div class="card-content">
-                        <span class="card-title truncate">Disperants</span>
+                        <span class="card-title">Dispersants</span>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large amber  " href="#top">
@@ -110,31 +109,33 @@
         $(".dropdown-trigger").dropdown();
         $('.fixed-action-btn').floatingActionButton();
         $('.modal').modal();
+        $('.materialboxed').materialbox();
     })
 
 </script>
-    <script>
-        $(document).ready(function() {
-            $(document).bind("contextmenu", function(e) {
-                alert('right click disabled by the developer.');
-                return false;
-            });
-            document.onkeydown = function(e) {
-                if (e.ctrlKey &&
-                    (e.keyCode === 67 ||
-                        e.keyCode === 86 ||
-                        e.keyCode === 85 ||
-                        e.keyCode === 117)) {
-                    alert('Action has been disabled by the developer. Be Creative.');
-                    return false;
-                } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-                    alert('Action has been disabled by the developer. Be Creative.')
-                    return false;
-                } else {
-                    return true;
-                }
-            };
+<script>
+    $(document).ready(function() {
+        $(document).bind("contextmenu", function(e) {
+            alert('right click disabled by the developer.');
+            return false;
         });
-    </script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 117)) {
+                alert('Action has been disabled by the developer. Be Creative.');
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+                alert('Action has been disabled by the developer. Be Creative.')
+                return false;
+            } else {
+                return true;
+            }
+        };
+    });
+
+</script>
 
 </html>
