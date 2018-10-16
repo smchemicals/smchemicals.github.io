@@ -11,6 +11,12 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700" rel="stylesheet">
+    <style>
+        .btncolor{
+            background: #01579b;
+        }
+    </style>
 
 </head>
 
@@ -40,35 +46,72 @@
     <main>
         <div class="container">
             <div class="section">
-                <!--   Icon Section   -->
                 <div class="col s12 m4 l8 center-align">
                     <div class="icon-block">
-                        <h5 class="center" style="">S M Chemicals</h5>
+                        <h3 class="center" style="">S M Chemicals</h3>
                         <p class="light"> S M Chemicals is in the field of manufacturies and marketing exporter association with M/S Pooja Chemicals, Hyderabad for past 18 years. the CEO of the company has a vast technical and commercial field experience in the field of total water water management including effluent water Treatment. We have vast experience in chemicals and polymers related to Aquaculture, Textiles, Pulp and Paper, Sugar mills, Biomass power plants, Heavy Industries in power and Public sector</p>
                         <p class="light">We are in constant search and research for new and advanced applications in the industrial and institutional markets.</p>
                     </div>
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img height="400px" src="/images/RMC.jpg" alt="Construction">
+                                <div class="caption left-align">
+                                    <h2 class="textcolor">Construction Chemicals</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='const_chem.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/ETP_Main.jpg" alt="ETP Chemical">
+                                <div class="caption right-align">
+                                    <h2 class="textcolor">ETP Chemicals</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='ETP_chem.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/paper.jpg" alt="Pulp and Paper">
+                                <div class="caption left-align">
+                                    <h2 class="textcolor">Pulp and Paper</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='pulp_and_paper.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/Laundry_Main.jpg" alt="Laundry Chemicals">
+                                <div class="caption right-align">
+                                    <h2 class="textcolor">Laundry Chemicals</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='laundry_chem.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/Water_Treatment_Chem.jpg" alt="Water Treatement Chemicals">
+                                <div class="caption left-align">
+                                    <h2 class="textcolor">Water Treatement Chemicals</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='water_treatement_chem_pre.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/Cooling_tower.jpg" alt="Cooling Tower Water Treatement">
+                                <div class="caption right-align">
+                                    <h2 class="textcolor">Cooling Tower Water Treatement</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='const_chem.html'">Read More</div>
+                                </div>
+                            </li>
+                            <li>
+                                <img height="400px" src="/images/Poly.jpg" alt="Polymers">
+                                <div class="caption left-align">
+                                    <h2 class="textcolor">Polymers</h2>
+                                    <div class="btn right btncolor" onclick="window.location.href='polymers.html'">Read More</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <div class="carousel carousel-slider">
-                    <a class="carousel-item" href="const_chem.html"><img height="400px" src="/images/RMC.jpg" alt="Construction"></a>
-                    <a class="carousel-item" href="ETP_chem.html"><img height="400px" src="/images/ETP_Main.jpg" alt="ETP Chemical"></a>
-                    <a class="carousel-item" href="pulp_and_paper.html"><img height="400px" src="/images/paper.jpg" alt="Pulp and Paper"></a>
-                    <a class="carousel-item" href="laundry_chem.html"><img height="400px" src="/images/Laundry_Main.jpg" alt="Laundry Chemicals"></a>
-                    <a class="carousel-item" href="water_treatment_chem_pre.html"><img height="400px" src="/images/Water_Treatment_Chem.jpg" alt="Water Treatement Chemicals"></a>
-                    <a class="carousel-item" href="cooling_water_treatement.html"><img height="400px" src="/images/Cooling_tower.jpg" alt="Cooling Tower Water Treatement"></a>
-                    <a class="carousel-item" href="polymers.html"><img height="400px" src="/images/Poly.jpg" alt="Polymers"></a>
-
-                </div>
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large amber" href="#top">
+                    <i class="large material-icons">arrow_upward</i>
+                </a>
             </div>
-        </div>
-        <div class="fixed-action-btn">
-            <a class="btn-floating btn-large amber" href="#top">
-                <i class="large material-icons">arrow_upward</i>
-            </a>
-        </div>
 
     </main>
 
@@ -105,21 +148,17 @@
     <script src="js/init.js"></script>
     <script src="js/index.js"></script>
     <script>
-        $('.carousel').carousel({
-            padding: 200
-        });
-        setTimeout(autoplay, 2500);
-
-        function autoplay() {
-            $('.carousel').carousel('next');
-            setTimeout(autoplay, 2500);
-        }
-
         $(document).ready(function() {
             $('.sidenav').sidenav();
             $(".dropdown-trigger").dropdown();
             $('.fixed-action-btn').floatingActionButton();
             $('.tap-target').tapTarget();
+            $('.slider').slider();
+            $('.slider').slider({
+                full_width: false,
+                interval: 1200,
+                transition: 800,
+            });
         })
 
     </script>
